@@ -26,4 +26,4 @@ fastapi-microservices/
   docker volume create todo_data
   docker run --rm -p 8000:80 -v todo_data:/app/data --name todo-service todo-service:local
 Через Docker:
-  docker run-d-p 8000:80-v todo_data:/app/data <ваш_логин_hub>/todo-service:latest
+  docker run-d-p 8000:80-v todo_data:/app/data doronardrovosek/todo-service:latest
