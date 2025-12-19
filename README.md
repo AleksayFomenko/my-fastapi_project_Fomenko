@@ -17,5 +17,6 @@ fastapi-microservices/
     │   ├── main.py        # Точка входа FastAPI-приложения
     │   ├── database.py    # Работа с SQLite и инициализация БД
     │   └── models.py      # Pydantic-модели
+    │   └── data/          # БД-data
     ├── requirements.txt   # Зависимости сервиса
     └── Dockerfile         # Docker-образ TODO-сервиса
