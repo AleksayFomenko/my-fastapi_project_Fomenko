@@ -7,7 +7,13 @@ TODO-сервис:
 - упакован в Docker-контейнер,
 - сохраняет данные в именованном Docker-томе,
 - имеет автоматическую документацию Swagger (`/docs`).
-  
+
+Запуск локально:
+  docker build -t todo-service:local
+  docker volume create todo_data
+  docker run --rm -p 8000:80 -v todo_data:/app/data --name todo-service todo-service:local
+Через Docker:
+  docker run-d-p 8000:80-v todo_data:/app/data <ваш_логин_hub>/todo-service:latest
 Структура репозитория:
 
 ```text
